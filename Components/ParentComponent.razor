@@ -1,0 +1,18 @@
+﻿<h3>ParenComponent</h3>
+
+<!--Cascading parameter without IsFixed fix the problem -->
+<!--
+<CascadingValue Value="this">
+    @Children
+</CascadingValue>
+-->
+
+@Children
+
+@code {
+    [Parameter]
+    public RenderFragment Children { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+}

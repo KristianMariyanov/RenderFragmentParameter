@@ -1,0 +1,9 @@
+﻿
+Last Render: @DateTime.Now
+
+@code {
+    [CascadingParameter]
+    public ParentComponent Parent { get; set; }
+
+    public RenderFragment Children { get; set; }
+}

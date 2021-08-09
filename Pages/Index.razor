@@ -1,0 +1,11 @@
+﻿@using IsFixedRendering.Components
+
+@page "/"
+
+<button @onclick="@(() => StateHasChanged())">StateHasChanged<button>
+
+<ParentComponent Title="Parent Title">
+    <Children>
+        <ChildComponent></ChildComponent>
+    </Children>
+</ParentComponent>
